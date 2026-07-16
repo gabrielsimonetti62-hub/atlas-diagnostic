@@ -9,7 +9,7 @@ export function Nav() {
           <div className="nav-tagline">Laissez-nous porter votre monde sur nos épaules</div>
         </div>
         <div className="nav-links">
-          <Link href="/offres/hermes" className="nav-link">Offres</Link>
+        <Link href="/offres" className="nav-link">Offres</Link>
           <Link href="/articles" className="nav-link">Articles</Link>
           <Link href="/a-propos" className="nav-link">À propos</Link>
           <Link href="#offres" className="nav-cta">Diagnostiquer mon entreprise</Link>
