@@ -3,7 +3,7 @@ import { Nav, Footer } from "../components";
 
 export const metadata = {
   title: "Nos offres — Diagnostic stratégique pour TPE et PME | ATLAS",
-  description: "Trois niveaux d'accompagnement adaptés à chaque besoin : Hermès (199 €), Iris (599 €) et Athéna (1 199 €). Diagnostic stratégique complet pour TPE et PME.",
+  description: "Trois niveaux d'accompagnement : Hermès (199€), Iris (599€) et Athéna (1199€).",
 };
 
 function OfferCheck({ color, children }) {
@@ -23,7 +23,7 @@ export default function Offres() {
         <section className="page-header">
           <div className="section-label">Les offres</div>
           <h1>Choisissez votre niveau de diagnostic</h1>
-          <p className="section-intro">Trois formules con&ccedil;ues pour s&apos;adapter &agrave; votre besoin et &agrave; votre rythme. Quelle que soit l&apos;offre choisie, vous pourrez &eacute;voluer vers un niveau sup&eacute;rieur &agrave; tout moment.</p>
+          <p className="section-intro">Trois formules adapt&eacute;es &agrave; chaque besoin. &Eacute;voluez vers un niveau sup&eacute;rieur &agrave; tout moment.</p>
         </section>
       </div>
       <div className="container">
@@ -36,7 +36,7 @@ export default function Offres() {
                   <div className="offer-price">199 &euro; <span>TTC</span></div>
                 </div>
                 <div className="offer-bottom">
-                  <div className="offer-desc">Un bilan complet et imm&eacute;diat de votre entreprise.</div>
+                  <div className="offer-desc">Un bilan complet et imm&eacute;diat.</div>
                   <ul className="offer-features">
                     <OfferCheck color="silver">Diagnostic de votre entreprise</OfferCheck>
                     <OfferCheck color="silver">Rapport d&eacute;taill&eacute;</OfferCheck>
@@ -52,14 +52,14 @@ export default function Offres() {
                   <div className="offer-price">599 &euro; <span>TTC</span></div>
                 </div>
                 <div className="offer-bottom">
-                  <div className="offer-desc">Le diagnostic complet avec orientation et suivi &agrave; 3 mois.</div>
+                  <div className="offer-desc">Diagnostic + orientation + suivi &agrave; 3 mois.</div>
                   <ul className="offer-features">
                     <OfferCheck color="gold">Diagnostic de votre entreprise</OfferCheck>
                     <OfferCheck color="gold">Rapport d&eacute;taill&eacute;</OfferCheck>
                     <OfferCheck color="gold">Recommandations prioris&eacute;es</OfferCheck>
                     <OfferCheck color="gold">Orientation &eacute;cosyst&egrave;me ATLAS</OfferCheck>
-                    <OfferCheck color="gold">Diagnostic de suivi &agrave; 3 mois</OfferCheck>
-                    <OfferCheck color="gold">Recommandations prioris&eacute;es &agrave; 3 mois</OfferCheck>
+                    <OfferCheck color="gold">Suivi &agrave; 3 mois</OfferCheck>
+                    <OfferCheck color="gold">Recommandations &agrave; 3 mois</OfferCheck>
                   </ul>
                   <Link href="/offres/iris" className="offer-btn">D&eacute;couvrir Iris</Link>
                 </div>
@@ -71,17 +71,14 @@ export default function Offres() {
                   <div className="offer-price">1 199 &euro; <span>TTC</span></div>
                 </div>
                 <div className="offer-bottom">
-                  <div className="offer-desc">L&apos;accompagnement complet sur 7 mois.</div>
+                  <div className="offer-desc">Accompagnement complet sur 7 mois.</div>
                   <ul className="offer-features">
                     <OfferCheck color="purple">Dossier prioritaire</OfferCheck>
                     <OfferCheck color="purple">Diagnostic de votre entreprise</OfferCheck>
                     <OfferCheck color="purple">Rapport d&eacute;taill&eacute;</OfferCheck>
                     <OfferCheck color="purple">Recommandations prioris&eacute;es</OfferCheck>
                     <OfferCheck color="purple">Orientation &eacute;cosyst&egrave;me ATLAS</OfferCheck>
-                    <OfferCheck color="purple">Suivi &agrave; 1 mois + recommandations</OfferCheck>
-                    <OfferCheck color="purple">Suivi &agrave; 3 mois + bilan d&apos;&eacute;volution</OfferCheck>
-                    <OfferCheck color="purple">Suivi &agrave; 5 mois + recommandations</OfferCheck>
-                    <OfferCheck color="purple">Suivi &agrave; 7 mois + bilan de fin de parcours</OfferCheck>
+                    <OfferCheck color="purple">Suivi 1, 3, 5, 7 mois</OfferCheck>
                   </ul>
                   <Link href="/offres/athena" className="offer-btn">D&eacute;couvrir Ath&eacute;na</Link>
                 </div>
