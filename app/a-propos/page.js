@@ -30,7 +30,7 @@ export default function APropos() {
           <p>Chaque diagnostic est enrichi par une recherche sectorielle actualis&eacute;e, une analyse concurrentielle, et la production d&apos;outils strat&eacute;giques reconnus : matrice SWOT, analyse PESTEL, mod&egrave;le des 5 forces de Porter, matrice urgence/importance.</p>
           <p>L&apos;indice de lucidit&eacute;, propre &agrave; ATLAS, mesure l&apos;&eacute;cart entre la perception du dirigeant et la r&eacute;alit&eacute; des donn&eacute;es. C&apos;est un indicateur unique qui transforme la mani&egrave;re dont les dirigeants prennent leurs d&eacute;cisions.</p>
           <h2>Notre histoire</h2>
-          <p>ATLAS a &eacute;t&eacute; fond&eacute; en 2026 avec une conviction : que la technologie peut d&eacute;mocratiser l&apos;acc&egrave;s au conseil strat&eacute;gique de qualit&eacute;. En combinant une m&eacute;thodologie rigoureuse, une adresse humaine et des outils d&apos;intelligence artificielle, ATLAS rend possible ce qui &eacute;tait r&eacute;serv&eacute; &agrave; une minorit&eacute; d&apos;entreprises.</p>
+          <p>ATLAS a &eacute;t&eacute; fond&eacute; en 2026 avec une conviction : que la technologie peut d&eacute;mocratiser l&apos;acc&egrave;s au conseil strat&eacute;gique de qualit&eacute;. En combinant une m&eacute;thodologie rigoureuse, une analyse humaine et des outils d&apos;intelligence artificielle, ATLAS rend possible ce qui &eacute;tait r&eacute;serv&eacute; &agrave; une minorit&eacute; d&apos;entreprises.</p>
         </section>
       </div>
       <Footer />
