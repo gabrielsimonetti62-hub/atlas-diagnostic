@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Nav, Footer } from "./components";
+import { Nav, Footer, GoldSep, OffersPlateau } from "./components";
 
 function PainCard({ icon, title, desc }) {
   return (
@@ -11,14 +11,17 @@ function PainCard({ icon, title, desc }) {
   );
 }
 
-function OfferCheck({ color, children }) {
-  return (
-    <li>
-      <span className={`offer-check check-${color}`}>&#10003;</span>
-      {children}
-    </li>
-  );
-}
+/* Icones au trait fin */
+const I = {
+  treso: <svg viewBox="0 0 24 24"><path d="M3 7l6 6 4-4 8 8" strokeLinecap="round" strokeLinejoin="round"/><path d="M21 13v4h-4" strokeLinecap="round" strokeLinejoin="round"/></svg>,
+  client: <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c0-3.5 3-5.5 7-5.5s7 2 7 5.5" strokeLinecap="round"/><path d="M17.5 3.5l3 3M20.5 3.5l-3 3" strokeLinecap="round"/></svg>,
+  croissance: <svg viewBox="0 0 24 24"><path d="M4 20L20 4" strokeLinecap="round"/><path d="M12 4h8v8" strokeLinecap="round" strokeLinejoin="round"/><path d="M4 20h4M4 20v-4" strokeLinecap="round"/></svg>,
+  solitude: <svg viewBox="0 0 24 24"><circle cx="12" cy="7" r="3.5"/><path d="M6 20c0-3 2.5-5 6-5s6 2 6 5" strokeLinecap="round"/></svg>,
+  processus: <svg viewBox="0 0 24 24"><path d="M4 7h10M4 12h16M4 17h7" strokeLinecap="round"/><circle cx="18" cy="7" r="2"/><circle cx="15" cy="17" r="2"/></svg>,
+  acquisition: <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="0.5"/></svg>,
+  delegation: <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 4v4M12 16v4M4 12h4M16 12h4" strokeLinecap="round"/></svg>,
+  vision: <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7v5l3.5 2" strokeLinecap="round" strokeLinejoin="round"/></svg>,
+};
 
 export default function Home() {
   return (
@@ -28,36 +31,56 @@ export default function Home() {
       {/* HERO */}
       <div className="container">
         <section className="hero">
-          <div className="hero-eyebrow">Diagnostic strat&eacute;gique pour TPE et PME</div>
-          <h1>Votre entreprise a des failles. Vous ne les voyez pas encore.</h1>
-          <p>ATLAS d&eacute;tecte en 10 domaines ce qui freine votre croissance, menace votre tr&eacute;sorerie ou fragilise votre organisation. Le diagnostic d&apos;un cabinet, au prix d&apos;un ind&eacute;pendant.</p>
-          <a href="#offres" className="btn-cta">Lancer mon diagnostic &rarr;</a>
-          <div className="hero-sub">&Agrave; partir de 199 &euro; &middot; R&eacute;sultats sous 72h</div>
-        </section>
-      </div>
-
-      <div className="container"><hr className="divider" /></div>
-
-      {/* LE CONSTAT */}
-      <div className="container">
-        <section className="section">
-          <div className="section-label">Le constat</div>
-          <h2>Les angles morts qui fragilisent les TPE et PME</h2>
-          <p className="section-intro">80 % des d&eacute;faillances d&apos;entreprise auraient pu &ecirc;tre anticip&eacute;es. Mais sans regard ext&eacute;rieur, les signaux faibles passent inaper&ccedil;us jusqu&apos;&agrave; devenir des urgences.</p>
-          <div className="pain-grid">
-            <PainCard icon="&#9660;" title="Tr&eacute;sorerie sous tension" desc="Vous g&eacute;rez au jour le jour sans voir les causes structurelles" />
-            <PainCard icon="&#9888;" title="D&eacute;pendance client" desc="Un d&eacute;part client et votre chiffre d&apos;affaires s&apos;effondre" />
-            <PainCard icon="&#8599;" title="Croissance sans rep&egrave;res" desc="Vous grandissez sans savoir si vos fondations tiennent" />
-            <PainCard icon="&#9673;" title="Solitude du dirigeant" desc="Aucun regard ext&eacute;rieur sur vos d&eacute;cisions strat&eacute;giques" />
-            <PainCard icon="&#8644;" title="Processus flous" desc="L&apos;organisation repose sur des habitudes, pas sur des syst&egrave;mes" />
-            <PainCard icon="&#9678;" title="Acquisition incertaine" desc="Pas de strat&eacute;gie claire pour trouver et fid&eacute;liser vos clients" />
-            <PainCard icon="&#8856;" title="D&eacute;l&eacute;gation difficile" desc="Tout repose sur vous, impossible de l&acirc;cher le volant" />
-            <PainCard icon="&#9201;" title="Vision court-termiste" desc="L&apos;urgence quotidienne &eacute;crase la r&eacute;flexion strat&eacute;gique" />
+          <div className="hero-eyebrow animate-in">Diagnostic strat&eacute;gique pour TPE et PME</div>
+          <h1 className="animate-in delay-1">Votre entreprise a des failles. Vous ne les voyez pas encore.</h1>
+          <p className="animate-in delay-2">ATLAS d&eacute;tecte en 10 domaines ce qui freine votre croissance, menace votre tr&eacute;sorerie ou fragilise votre organisation. Le diagnostic d&apos;un cabinet, au prix d&apos;un ind&eacute;pendant.</p>
+          <a href="#offres" className="btn-cta animate-in delay-3">Lancer mon diagnostic &rarr;</a>
+          <div className="hero-sub animate-in delay-3">&Agrave; partir de 199 &euro; &middot; R&eacute;sultats d&egrave;s 72h</div>
+          <div className="trust-bar animate-in delay-4">
+            <div className="trust-item"><div className="trust-num">127</div><div className="trust-label">questions d&apos;analyse</div></div>
+            <div className="trust-item"><div className="trust-num">10</div><div className="trust-label">domaines strat&eacute;giques</div></div>
+            <div className="trust-item"><div className="trust-num">24&ndash;40</div><div className="trust-label">pages de rapport</div></div>
+            <div className="trust-item"><div className="trust-num">72h</div><div className="trust-label">premiers r&eacute;sultats</div></div>
           </div>
         </section>
       </div>
 
-      <div className="container"><hr className="divider" /></div>
+      <div className="container"><GoldSep /></div>
+
+      {/* LE CONSTAT */}
+      <div className="container">
+        <section className="section section-centered">
+          <div className="section-label">Le constat</div>
+          <h2>Les angles morts qui fragilisent les TPE et PME</h2>
+          <p className="section-intro">80 % des d&eacute;faillances d&apos;entreprise auraient pu &ecirc;tre anticip&eacute;es. Mais sans regard ext&eacute;rieur, les signaux faibles passent inaper&ccedil;us jusqu&apos;&agrave; devenir des urgences.</p>
+          <div className="pain-grid">
+            <PainCard icon={I.treso} title="Tr&eacute;sorerie sous tension" desc="Vous g&eacute;rez au jour le jour sans voir les causes structurelles" />
+            <PainCard icon={I.client} title="D&eacute;pendance client" desc="Un d&eacute;part client et votre chiffre d&apos;affaires s&apos;effondre" />
+            <PainCard icon={I.croissance} title="Croissance sans rep&egrave;res" desc="Vous grandissez sans savoir si vos fondations tiennent" />
+            <PainCard icon={I.solitude} title="Solitude du dirigeant" desc="Aucun regard ext&eacute;rieur sur vos d&eacute;cisions strat&eacute;giques" />
+            <PainCard icon={I.processus} title="Processus flous" desc="L&apos;organisation repose sur des habitudes, pas sur des syst&egrave;mes" />
+            <PainCard icon={I.acquisition} title="Acquisition incertaine" desc="Pas de strat&eacute;gie claire pour trouver et fid&eacute;liser vos clients" />
+            <PainCard icon={I.delegation} title="D&eacute;l&eacute;gation difficile" desc="Tout repose sur vous, impossible de l&acirc;cher le volant" />
+            <PainCard icon={I.vision} title="Vision court-termiste" desc="L&apos;urgence quotidienne &eacute;crase la r&eacute;flexion strat&eacute;gique" />
+          </div>
+        </section>
+      </div>
+
+      {/* BANDE PHOTOS */}
+      <div className="container">
+        <section className="section section-centered" style={{ paddingTop: 0 }}>
+          <div className="section-label">Pour qui</div>
+          <h2>Con&ccedil;u pour ceux qui font tourner l&apos;&eacute;conomie r&eacute;elle</h2>
+          <p className="section-intro">Artisans, commer&ccedil;ants, ind&eacute;pendants, dirigeants de TPE et PME : ATLAS parle votre langue, pas celle des salles de r&eacute;union.</p>
+          <div className="photo-band">
+            <img src="/images/artisan-tracage.jpg" alt="Artisan menuisier au travail dans son atelier" />
+            <img src="/images/epicerie-duo.jpg" alt="Commer&ccedil;ants dans leur &eacute;picerie fine" />
+            <img src="/images/bureau-epure.jpg" alt="Bureau d&apos;ind&eacute;pendant travaillant de chez lui" />
+          </div>
+        </section>
+      </div>
+
+      <div className="container"><GoldSep /></div>
 
       {/* CTA MID */}
       <div className="container">
@@ -68,13 +91,13 @@ export default function Home() {
         </section>
       </div>
 
-      <div className="container"><hr className="divider" /></div>
+      <div className="container"><GoldSep /></div>
 
       {/* 4 ETAPES */}
       <div className="container">
         <section className="section">
-          <div className="section-label">Comment &ccedil;a marche</div>
-          <h2>4 &eacute;tapes vers la clart&eacute;</h2>
+          <div className="section-label" style={{ textAlign: "center" }}>Comment &ccedil;a marche</div>
+          <h2 style={{ textAlign: "center" }}>4 &eacute;tapes vers la clart&eacute;</h2>
           <div className="steps-list">
             <div className="step">
               <div className="step-num">1</div>
@@ -87,25 +110,28 @@ export default function Home() {
               <div className="step-num">2</div>
               <div className="step-content">
                 <h3>Remplissez le questionnaire</h3>
-                <p>Notre questionnaire couvre 127 questions r&eacute;parties sur 10 domaines strat&eacute;giques. Il a &eacute;t&eacute; con&ccedil;u &agrave; partir des m&eacute;thodologies utilis&eacute;es par les plus grands cabinets de conseil &mdash; audit interne, analyse financi&egrave;re, &eacute;valuation op&eacute;rationnelle, diagnostic de gouvernance &mdash; et adapt&eacute; pour &ecirc;tre compl&eacute;t&eacute; de mani&egrave;re autonome. Prenez votre temps : vous pouvez le remplir en une session ou y revenir sur plusieurs jours. Plus vos r&eacute;ponses seront d&eacute;taill&eacute;es, plus le diagnostic sera pr&eacute;cis.</p>
-                <div className="preview-box">
-                  <div className="preview-label">Aper&ccedil;u du questionnaire</div>
-                  <div className="preview-question">
-                    <p>Quelle part de votre CA votre plus gros client repr&eacute;sente-t-il ?</p>
-                    <div className="preview-options">
-                      <span className="preview-opt">Moins de 10 %</span>
-                      <span className="preview-opt selected">Entre 10 % et 20 %</span>
-                      <span className="preview-opt">Entre 20 % et 40 %</span>
-                      <span className="preview-opt">Plus de 40 %</span>
+                <p>Notre questionnaire couvre 127 questions r&eacute;parties sur 10 domaines strat&eacute;giques. Il a &eacute;t&eacute; con&ccedil;u &agrave; partir des m&eacute;thodologies utilis&eacute;es par les plus grands cabinets de conseil et adapt&eacute; pour &ecirc;tre compl&eacute;t&eacute; de mani&egrave;re autonome. Prenez votre temps : vous pouvez le remplir en une session ou y revenir sur plusieurs jours. Plus vos r&eacute;ponses seront d&eacute;taill&eacute;es, plus le diagnostic sera pr&eacute;cis.</p>
+                <div className="doc-paper">
+                  <div className="doc-paper-label">Extrait r&eacute;el &middot; Questionnaire ATLAS</div>
+                  <div className="doc-paper-title">Partie B &mdash; Domaine 3 : Finances et solvabilit&eacute;</div>
+                  <div className="doc-q">
+                    <div className="doc-q-num">Question 38</div>
+                    <p>Comment percevez-vous la solidit&eacute; financi&egrave;re de votre entreprise aujourd&apos;hui ?</p>
+                    <div className="doc-options">
+                      <span className="doc-opt">Tr&egrave;s solide</span>
+                      <span className="doc-opt selected">Plut&ocirc;t solide</span>
+                      <span className="doc-opt">Fragile</span>
+                      <span className="doc-opt">Tr&egrave;s fragile</span>
                     </div>
                   </div>
-                  <div className="preview-question">
-                    <p>Comment d&eacute;cririez-vous votre niveau de tr&eacute;sorerie actuel ?</p>
-                    <div className="preview-options">
-                      <span className="preview-opt">Confortable</span>
-                      <span className="preview-opt">Suffisant</span>
-                      <span className="preview-opt selected">Tendu</span>
-                      <span className="preview-opt">Critique</span>
+                  <div className="doc-q">
+                    <div className="doc-q-num">Question 41</div>
+                    <p>Si votre chiffre d&apos;affaires s&apos;arr&ecirc;tait demain, combien de mois votre tr&eacute;sorerie actuelle vous permettrait-elle de tenir ?</p>
+                    <div className="doc-options">
+                      <span className="doc-opt">Moins d&apos;1 mois</span>
+                      <span className="doc-opt selected">1 &agrave; 3 mois</span>
+                      <span className="doc-opt">3 &agrave; 6 mois</span>
+                      <span className="doc-opt">Plus de 6 mois</span>
                     </div>
                   </div>
                 </div>
@@ -115,42 +141,47 @@ export default function Home() {
               <div className="step-num">3</div>
               <div className="step-content">
                 <h3>Recevez votre diagnostic</h3>
-                <p>Sous 72 heures, vous recevez un rapport complet d&apos;une vingtaine de pages. Chaque domaine de votre entreprise est &eacute;valu&eacute; et not&eacute;, avec un score global sur 100. Le rapport inclut une analyse de votre march&eacute; et de votre concurrence, une matrice SWOT, une &eacute;valuation des risques, et un plan d&apos;action prioris&eacute; avec des recommandations concr&egrave;tes, des fourchettes budg&eacute;taires et les outils pour les mettre en &oelig;uvre. Un indice de lucidit&eacute; unique mesure l&apos;&eacute;cart entre votre perception de votre entreprise et la r&eacute;alit&eacute; des donn&eacute;es.</p>
-                <div className="preview-box">
-                  <div className="preview-label">Aper&ccedil;u du rapport</div>
-                  <div className="preview-diag-header">
-                    <div className="preview-diag-title">Diagnostic ATLAS</div>
-                    <span style={{ fontSize: "11px", color: "var(--color-lilas-muted)" }}>Entreprise fictive</span>
+                <p>D&egrave;s 72 heures, vous recevez un rapport complet de 24 &agrave; 40 pages. Chaque domaine de votre entreprise est &eacute;valu&eacute; et not&eacute;, avec un score global sur 100. Le rapport inclut une analyse de votre march&eacute; et de votre concurrence, une matrice SWOT, une &eacute;valuation des risques, et un plan d&apos;action prioris&eacute; avec des recommandations concr&egrave;tes, des fourchettes budg&eacute;taires et les outils pour les mettre en &oelig;uvre.</p>
+                <div className="doc-paper">
+                  <div className="doc-paper-label">Extrait r&eacute;el &middot; Rapport ATLAS</div>
+                  <div className="doc-paper-title">Chapitre 2 &mdash; Synth&egrave;se ex&eacute;cutive</div>
+                  <div className="doc-global">
+                    <div className="doc-global-label">Score global</div>
+                    <div className="doc-global-score">61 <span>/ 100</span></div>
                   </div>
-                  <div className="preview-signal">
-                    <div className="signal-dot red"></div>
-                    <div className="signal-name">Concentration client</div>
-                    <div className="signal-level">Signal critique</div>
+                  <div className="doc-score-row">
+                    <div className="doc-score-name">D1 &middot; March&eacute; et demande r&eacute;elle</div>
+                    <div className="doc-score-bar"><div className="doc-score-fill fill-green" style={{ width: "70%" }}></div></div>
+                    <div className="doc-score-val">7/10</div>
                   </div>
-                  <div className="preview-signal">
-                    <div className="signal-dot amber"></div>
-                    <div className="signal-name">Tr&eacute;sorerie et runway</div>
-                    <div className="signal-level">Signal d&apos;alerte</div>
+                  <div className="doc-score-row">
+                    <div className="doc-score-name">D3 &middot; Finances et solvabilit&eacute;</div>
+                    <div className="doc-score-bar"><div className="doc-score-fill fill-amber" style={{ width: "50%" }}></div></div>
+                    <div className="doc-score-val">5/10</div>
                   </div>
-                  <div className="preview-signal">
-                    <div className="signal-dot green"></div>
-                    <div className="signal-name">Acquisition commerciale</div>
-                    <div className="signal-level">Signal sain</div>
+                  <div className="doc-score-row">
+                    <div className="doc-score-name">D6 &middot; Capital humain et leadership</div>
+                    <div className="doc-score-bar"><div className="doc-score-fill fill-red" style={{ width: "30%" }}></div></div>
+                    <div className="doc-score-val">3/10</div>
                   </div>
                   <div className="blur-overlay">
                     <div className="blur-inner">
-                      <div className="preview-signal">
-                        <div className="signal-dot amber"></div>
-                        <div className="signal-name">D&eacute;l&eacute;gation et processus</div>
-                        <div className="signal-level">Signal d&apos;alerte</div>
+                      <div className="doc-score-row">
+                        <div className="doc-score-name">D7 &middot; Strat&eacute;gie et gouvernance</div>
+                        <div className="doc-score-bar"><div className="doc-score-fill fill-gold" style={{ width: "60%" }}></div></div>
+                        <div className="doc-score-val">6/10</div>
                       </div>
-                      <div className="preview-signal">
-                        <div className="signal-dot green"></div>
-                        <div className="signal-name">Strat&eacute;gie et gouvernance</div>
-                        <div className="signal-level">Signal sain</div>
+                      <div className="doc-score-row">
+                        <div className="doc-score-name">D9 &middot; Veille concurrentielle</div>
+                        <div className="doc-score-bar"><div className="doc-score-fill fill-amber" style={{ width: "40%" }}></div></div>
+                        <div className="doc-score-val">4/10</div>
                       </div>
                     </div>
-                    <div className="blur-text">Lancez votre diagnostic pour voir le rapport complet</div>
+                    <div className="blur-text">Lancez votre diagnostic pour d&eacute;couvrir le rapport complet</div>
+                  </div>
+                  <div className="doc-lucidite">
+                    <div className="doc-lucidite-label">Indice de lucidit&eacute;</div>
+                    <p><strong>&Eacute;cart mod&eacute;r&eacute;</strong> &mdash; votre perception surestime la solidit&eacute; financi&egrave;re de l&apos;entreprise par rapport &agrave; la r&eacute;alit&eacute; des donn&eacute;es. D&eacute;tail en Chapitre 3.</p>
                   </div>
                 </div>
               </div>
@@ -166,77 +197,16 @@ export default function Home() {
         </section>
       </div>
 
-      <div className="container"><hr className="divider" /></div>
+      <div className="container"><GoldSep /></div>
 
       {/* PLATEAU OFFRES */}
       <div className="container">
         <div className="plateau-wrapper" id="offres">
-          <div className="plateau">
-            <div className="plateau-label">Les offres</div>
-            <div className="plateau-title">Choisissez votre niveau de diagnostic</div>
-            <div className="offers-grid">
-              <div className="offer-card">
-                <div className="offer-top offer-top-silver">
-                  <div className="offer-name">Herm&egrave;s</div>
-                  <div className="offer-price">199 &euro; <span>TTC</span></div>
-                </div>
-                <div className="offer-bottom">
-                  <div className="offer-desc">Un bilan complet et imm&eacute;diat de votre entreprise.</div>
-                  <ul className="offer-features">
-                    <OfferCheck color="silver">Diagnostic de votre entreprise</OfferCheck>
-                    <OfferCheck color="silver">Rapport d&eacute;taill&eacute;</OfferCheck>
-                    <OfferCheck color="silver">Recommandations prioris&eacute;es</OfferCheck>
-                  </ul>
-                  <Link href="/offres/hermes" className="offer-btn">D&eacute;couvrir Herm&egrave;s</Link>
-                </div>
-              </div>
-              <div className="offer-card featured">
-                <div className="offer-badge badge-gold">Recommand&eacute;</div>
-                <div className="offer-top offer-top-gold">
-                  <div className="offer-name">Iris</div>
-                  <div className="offer-price">599 &euro; <span>TTC</span></div>
-                </div>
-                <div className="offer-bottom">
-                  <div className="offer-desc">Le diagnostic complet avec orientation et suivi &agrave; 3 mois.</div>
-                  <ul className="offer-features">
-                    <OfferCheck color="gold">Diagnostic de votre entreprise</OfferCheck>
-                    <OfferCheck color="gold">Rapport d&eacute;taill&eacute;</OfferCheck>
-                    <OfferCheck color="gold">Recommandations prioris&eacute;es</OfferCheck>
-                    <OfferCheck color="gold">Orientation &eacute;cosyst&egrave;me ATLAS</OfferCheck>
-                    <OfferCheck color="gold">Diagnostic de suivi &agrave; 3 mois</OfferCheck>
-                    <OfferCheck color="gold">Recommandations prioris&eacute;es &agrave; 3 mois</OfferCheck>
-                  </ul>
-                  <Link href="/offres/iris" className="offer-btn">D&eacute;couvrir Iris</Link>
-                </div>
-              </div>
-              <div className="offer-card premium">
-                <div className="offer-badge badge-premium"><span style={{ fontSize: "12px" }}>&#128081;</span> Premium</div>
-                <div className="offer-top offer-top-purple">
-                  <div className="offer-name">Ath&eacute;na</div>
-                  <div className="offer-price">1 199 &euro; <span>TTC</span></div>
-                </div>
-                <div className="offer-bottom">
-                  <div className="offer-desc">L&apos;accompagnement complet sur 7 mois.</div>
-                  <ul className="offer-features">
-                    <OfferCheck color="purple">Dossier prioritaire</OfferCheck>
-                    <OfferCheck color="purple">Diagnostic de votre entreprise</OfferCheck>
-                    <OfferCheck color="purple">Rapport d&eacute;taill&eacute;</OfferCheck>
-                    <OfferCheck color="purple">Recommandations prioris&eacute;es</OfferCheck>
-                    <OfferCheck color="purple">Orientation &eacute;cosyst&egrave;me ATLAS</OfferCheck>
-                    <OfferCheck color="purple">Suivi &agrave; 1 mois + recommandations</OfferCheck>
-                    <OfferCheck color="purple">Suivi &agrave; 3 mois + bilan d&apos;&eacute;volution</OfferCheck>
-                    <OfferCheck color="purple">Suivi &agrave; 5 mois + recommandations</OfferCheck>
-                    <OfferCheck color="purple">Suivi &agrave; 7 mois + bilan de fin de parcours</OfferCheck>
-                  </ul>
-                  <Link href="/offres/athena" className="offer-btn">D&eacute;couvrir Ath&eacute;na</Link>
-                </div>
-              </div>
-            </div>
-          </div>
+          <OffersPlateau label="Les offres" title="Choisissez votre niveau de diagnostic" />
         </div>
       </div>
 
-      <div className="container"><hr className="divider" /></div>
+      <div className="container"><GoldSep /></div>
 
       {/* CLOSING */}
       <div className="container">
