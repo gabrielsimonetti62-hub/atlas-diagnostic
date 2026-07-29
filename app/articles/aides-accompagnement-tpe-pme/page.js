@@ -1,4 +1,4 @@
-import { ArticleShell, ConversionBanner, GoldSep } from "../../components";
+import { ArticleShell, ConversionBanner, GoldSep, ArticleRelated } from "../../components";
 
 export const metadata = {
   title: "Aides et accompagnement pour les TPE et PME | ATLAS",
@@ -23,10 +23,14 @@ export default function Article4() {
       <h2>Aides sectorielles</h2>
       <p>B&acirc;timent : <a href="https://www.capeb.fr" target="_blank" rel="noopener">CAPEB</a> et <a href="https://www.ffbatiment.fr" target="_blank" rel="noopener">FFB</a>. R&eacute;novation &eacute;nerg&eacute;tique : <a href="https://france-renov.gouv.fr" target="_blank" rel="noopener">France R&eacute;nov&apos;</a> et <a href="https://www.anah.gouv.fr" target="_blank" rel="noopener">ANAH</a>. Cr&eacute;ation : <a href="https://www.urssaf.fr/accueil/outils-documentation/acre.html" target="_blank" rel="noopener">ACRE</a> pour l&apos;exon&eacute;ration de cotisations. Le site <a href="https://les-aides.fr" target="_blank" rel="noopener">les-aides.fr</a> permet de rechercher les aides par projet et r&eacute;gion.</p>
       <ConversionBanner
-        title="Identifiez les aides qui vous concernent"
-        text="Le diagnostic ATLAS int&egrave;gre une identification des dispositifs pertinents dans son plan d&apos;action personnalis&eacute;."
-        stat="&Agrave; partir de 199 &euro; &middot; Plan d&apos;action avec ressources concr&egrave;tes"
+        title="Avant d&apos;aller chercher des aides, savoir ce qui vous manque"
+        text="Un diagnostic vous dit dans quel ordre traiter vos priorit&eacute;s, et &agrave; qui vous adresser pour chaque chantier."
+        stat="Iris (599 &euro;) inclut l&apos;orientation vers l&apos;&eacute;cosyst&egrave;me d&apos;experts."
       />
+      <ArticleRelated items={[
+        { label: "Pratique", title: "Diagnostic d&apos;entreprise : combien &ccedil;a co&ucirc;te ?", href: "/articles/diagnostic-entreprise-combien-ca-coute" },
+        { label: "Guide", title: "Micro-entreprise : &agrave; quel moment passer de la survie &agrave; la strat&eacute;gie ?", href: "/articles/micro-entreprise-passer-un-cap" },
+      ]} />
     </ArticleShell>
   );
 }
