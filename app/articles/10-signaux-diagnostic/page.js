@@ -7,41 +7,41 @@ export const metadata = {
 
 export default function Article2() {
   return (
-    <ArticleShell label="Analyse" title="Les 10 signaux qui montrent que votre entreprise a besoin d&apos;un diagnostic" image="/images/gestion-dossiers.jpg" imageAlt="Dirigeante face &agrave; des piles de dossiers">
-      <p>Un dirigeant de TPE ou PME vit dans son entreprise au quotidien. Il conna&icirc;t son m&eacute;tier, ses clients, ses collaborateurs. Mais cette proximit&eacute; cr&eacute;e un paradoxe : plus on est proche, plus il est difficile d&apos;en percevoir les failles. Les signaux suivants, pris isol&eacute;ment, semblent banals. Combin&eacute;s, ils dessinent le portrait d&apos;une entreprise en danger silencieux.</p>
+    <ArticleShell label="Analyse" title="Les 10 signaux qui montrent que votre entreprise a besoin d'un diagnostic" image="/images/gestion-dossiers.jpg" imageAlt="Dirigeante face à des piles de dossiers">
+      <p>Un dirigeant de TPE ou PME vit dans son entreprise au quotidien. Il connaît son métier, ses clients, ses collaborateurs. Mais cette proximité crée un paradoxe : plus on est proche, plus il est difficile d'en percevoir les failles. Les signaux suivants, pris isolément, semblent banals. Combinés, ils dessinent le portrait d'une entreprise en danger silencieux.</p>
       <GoldSep />
-      <h2>1. Votre tr&eacute;sorerie est tendue mais vous ne savez pas pourquoi</h2>
-      <p>Vous consultez votre solde bancaire, vous savez que c&apos;est serr&eacute;, mais vous ne parvenez pas &agrave; distinguer ce qui rel&egrave;ve d&apos;un creux passager d&apos;un d&eacute;faut structurel. Le danger n&apos;est pas la tension elle-m&ecirc;me, c&apos;est l&apos;impossibilit&eacute; de savoir si vous &ecirc;tes en situation de risque r&eacute;el ou simplement dans un cycle normal. Et tant que vous ne le savez pas, chaque d&eacute;cision financi&egrave;re est un pari.</p>
-      <h2>2. Un seul client repr&eacute;sente plus de 20 % de votre chiffre d&apos;affaires</h2>
-      <p>Tant que ce client est l&agrave;, tout semble fonctionner. Le jour o&ugrave; il part, changement de prestataire, r&eacute;duction de budget, faillite, c&apos;est 20, 30, parfois 40 % de votre activit&eacute; qui dispara&icirc;t sans pr&eacute;venir. Combien de temps votre entreprise tiendrait-elle si cela arrivait demain matin ? La plupart des dirigeants &agrave; qui l&apos;on pose cette question ne connaissent pas la r&eacute;ponse.</p>
-      <h2>3. Vous &ecirc;tes d&eacute;bord&eacute; mais votre chiffre d&apos;affaires stagne</h2>
-      <p>Vos journ&eacute;es s&apos;allongent, vous n&apos;avez plus une minute pour vous, et pourtant le chiffre ne d&eacute;colle pas. Ce paradoxe est le signe le plus clair d&apos;un plafonnement. Les causes sont rarement l&agrave; o&ugrave; on les cherche, et elles se renforcent mutuellement si elles ne sont pas identifi&eacute;es &agrave; temps. Travailler plus n&apos;est pas la solution, c&apos;est souvent le sympt&ocirc;me.</p>
+      <h2>1. Votre trésorerie est tendue mais vous ne savez pas pourquoi</h2>
+      <p>Vous consultez votre solde bancaire, vous savez que c'est serré, mais vous ne parvenez pas à distinguer ce qui relève d'un creux passager d'un défaut structurel. Le danger n'est pas la tension elle-même, c'est l'impossibilité de savoir si vous êtes en situation de risque réel ou simplement dans un cycle normal. Et tant que vous ne le savez pas, chaque décision financière est un pari.</p>
+      <h2>2. Un seul client représente plus de 20 % de votre chiffre d'affaires</h2>
+      <p>Tant que ce client est là, tout semble fonctionner. Le jour o&ugrave; il part, changement de prestataire, réduction de budget, faillite, c'est 20, 30, parfois 40 % de votre activité qui disparaît sans prévenir. Combien de temps votre entreprise tiendrait-elle si cela arrivait demain matin ? La plupart des dirigeants à qui l'on pose cette question ne connaissent pas la réponse.</p>
+      <h2>3. Vous êtes débordé mais votre chiffre d'affaires stagne</h2>
+      <p>Vos journées s'allongent, vous n'avez plus une minute pour vous, et pourtant le chiffre ne décolle pas. Ce paradoxe est le signe le plus clair d'un plafonnement. Les causes sont rarement là o&ugrave; on les cherche, et elles se renforcent mutuellement si elles ne sont pas identifiées à temps. Travailler plus n'est pas la solution, c'est souvent le symptôme.</p>
       <h2>4. Vous ne pourriez pas vous absenter une semaine</h2>
-      <p>Si votre entreprise ne survit pas &agrave; une semaine sans vous, elle ne d&eacute;pend pas de votre &eacute;quipe, elle d&eacute;pend de vous. C&apos;est une fragilit&eacute; que beaucoup de dirigeants confondent avec de l&apos;engagement. Un accident, une maladie, un &eacute;puisement, et tout s&apos;arr&ecirc;te. Ce risque ne diminue pas avec le temps. Il augmente.</p>
+      <p>Si votre entreprise ne survit pas à une semaine sans vous, elle ne dépend pas de votre équipe, elle dépend de vous. C'est une fragilité que beaucoup de dirigeants confondent avec de l'engagement. Un accident, une maladie, un épuisement, et tout s'arrête. Ce risque ne diminue pas avec le temps. Il augmente.</p>
       <h2>5. Vous ne savez pas ce que font vos concurrents</h2>
-      <p>Leurs prix, leurs offres, leur strat&eacute;gie de communication, les clients qu&apos;ils ciblent. Si vous ne pouvez pas r&eacute;pondre &agrave; ces questions, votre positionnement est probablement aussi flou pour vos clients qu&apos;il l&apos;est pour vous. Pendant ce temps, vos concurrents avancent. Certains d&apos;entre eux vous observent peut-&ecirc;tre d&eacute;j&agrave;.</p>
+      <p>Leurs prix, leurs offres, leur stratégie de communication, les clients qu'ils ciblent. Si vous ne pouvez pas répondre à ces questions, votre positionnement est probablement aussi flou pour vos clients qu'il l'est pour vous. Pendant ce temps, vos concurrents avancent. Certains d'entre eux vous observent peut-être déjà.</p>
       <GoldSep />
       <h2>6. Votre site web a plus de trois ans</h2>
-      <p>La majorit&eacute; des parcours d&apos;achat commencent en ligne, y compris dans les secteurs traditionnels. Un site obsol&egrave;te ne se contente pas de ne rien apporter, il repousse activement les prospects qui le visitent. Chaque jour avec un site d&eacute;pass&eacute;, ce sont des clients potentiels qui choisissent un concurrent sans que vous ne le sachiez jamais.</p>
-      <h2>7. Vous n&apos;avez pas de strat&eacute;gie &eacute;crite</h2>
-      <p>Avoir une vision en t&ecirc;te est une chose. Piloter une entreprise sans document de r&eacute;f&eacute;rence en est une autre. Sans formalisation, votre strat&eacute;gie ne peut &ecirc;tre ni partag&eacute;e, ni mesur&eacute;e, ni ajust&eacute;e. Vos collaborateurs avancent dans la direction qu&apos;ils imaginent &ecirc;tre la bonne, pas n&eacute;cessairement celle que vous avez en t&ecirc;te.</p>
+      <p>La majorité des parcours d'achat commencent en ligne, y compris dans les secteurs traditionnels. Un site obsolète ne se contente pas de ne rien apporter, il repousse activement les prospects qui le visitent. Chaque jour avec un site dépassé, ce sont des clients potentiels qui choisissent un concurrent sans que vous ne le sachiez jamais.</p>
+      <h2>7. Vous n'avez pas de stratégie écrite</h2>
+      <p>Avoir une vision en tête est une chose. Piloter une entreprise sans document de référence en est une autre. Sans formalisation, votre stratégie ne peut être ni partagée, ni mesurée, ni ajustée. Vos collaborateurs avancent dans la direction qu'ils imaginent être la bonne, pas nécessairement celle que vous avez en tête.</p>
       <h2>8. Vos marges baissent alors que votre CA augmente</h2>
-      <p>C&apos;est le pi&egrave;ge le plus dangereux parce qu&apos;il est invisible. Le chiffre d&apos;affaires progresse, ce qui donne une illusion de croissance, mais la rentabilit&eacute; fond. Quand le ph&eacute;nom&egrave;ne devient visible dans les comptes, il est souvent trop tard pour corriger sans douleur. Savez-vous pr&eacute;cis&eacute;ment quels produits ou clients vous co&ucirc;tent de l&apos;argent au lieu d&apos;en rapporter ?</p>
-      <h2>9. Vous passez plus de temps &agrave; g&eacute;rer qu&apos;&agrave; d&eacute;velopper</h2>
-      <p>L&apos;administratif, les urgences, le suivi quotidien absorbent la totalit&eacute; de votre &eacute;nergie. Le d&eacute;veloppement de l&apos;entreprise s&apos;arr&ecirc;te, les opportunit&eacute;s passent, et vous acceptez cette r&eacute;alit&eacute; comme une fatalit&eacute;. Ce n&apos;en est pas une. Mais sans identifier pr&eacute;cis&eacute;ment ce qui d&eacute;vore votre temps, il est impossible d&apos;en sortir.</p>
-      <h2>10. Vous ne communiquez pas au-del&agrave; du commercial</h2>
-      <p>Vos clients n&apos;entendent parler de vous que lorsque vous leur vendez quelque chose. Entre deux transactions, vous &ecirc;tes invisible. Pendant ce silence, vos concurrents occupent l&apos;espace, construisent leur notori&eacute;t&eacute;, et captent les clients qui auraient pu venir chez vous. L&apos;absence de communication n&apos;est pas neutre, c&apos;est un avantage offert &agrave; ceux qui communiquent.</p>
+      <p>C'est le piège le plus dangereux parce qu'il est invisible. Le chiffre d'affaires progresse, ce qui donne une illusion de croissance, mais la rentabilité fond. Quand le phénomène devient visible dans les comptes, il est souvent trop tard pour corriger sans douleur. Savez-vous précisément quels produits ou clients vous coûtent de l'argent au lieu d'en rapporter ?</p>
+      <h2>9. Vous passez plus de temps à gérer qu'à développer</h2>
+      <p>L'administratif, les urgences, le suivi quotidien absorbent la totalité de votre énergie. Le développement de l'entreprise s'arrête, les opportunités passent, et vous acceptez cette réalité comme une fatalité. Ce n'en est pas une. Mais sans identifier précisément ce qui dévore votre temps, il est impossible d'en sortir.</p>
+      <h2>10. Vous ne communiquez pas au-delà du commercial</h2>
+      <p>Vos clients n'entendent parler de vous que lorsque vous leur vendez quelque chose. Entre deux transactions, vous êtes invisible. Pendant ce silence, vos concurrents occupent l'espace, construisent leur notoriété, et captent les clients qui auraient pu venir chez vous. L'absence de communication n'est pas neutre, c'est un avantage offert à ceux qui communiquent.</p>
       <GoldSep />
       <h2>Ce que ces signaux ont en commun</h2>
-      <p>Aucun n&apos;est fatal en soi. C&apos;est leur combinaison et leur dur&eacute;e qui cr&eacute;ent le danger. Un dirigeant qui cumule trois ou quatre de ces signaux dirige une entreprise qui fonctionne aujourd&apos;hui, mais qui s&apos;expose &agrave; des difficult&eacute;s dont il ne mesure pas encore l&apos;ampleur.</p>
+      <p>Aucun n'est fatal en soi. C'est leur combinaison et leur durée qui créent le danger. Un dirigeant qui cumule trois ou quatre de ces signaux dirige une entreprise qui fonctionne aujourd'hui, mais qui s'expose à des difficultés dont il ne mesure pas encore l'ampleur.</p>
       <ConversionBanner
-        title="Combien de signaux avez-vous identifi&eacute;s ?"
-        text="Trois ou plus dans votre entreprise ? Il est temps d&apos;obtenir une lecture objective de la situation."
-        stat="127 questions, 10 domaines, un rapport de 24 &agrave; 40 pages."
+        title="Combien de signaux avez-vous identifiés ?"
+        text="Trois ou plus dans votre entreprise ? Il est temps d'obtenir une lecture objective de la situation."
+        stat="127 questions, 10 domaines, un rapport de 24 à 40 pages."
       />
       <ArticleRelated items={[
-        { label: "Guide", title: "Diagnostic strat&eacute;gique d&apos;entreprise : pourquoi et comment", href: "/articles/diagnostic-strategique-pourquoi-comment" },
-        { label: "Analyse", title: "Charges, tr&eacute;sorerie, impay&eacute;s : pourquoi des entreprises rentables finissent par fermer", href: "/articles/tresorerie-entreprises-rentables" },
+        { label: "Guide", title: "Diagnostic stratégique d'entreprise : pourquoi et comment", href: "/articles/diagnostic-strategique-pourquoi-comment" },
+        { label: "Analyse", title: "Charges, trésorerie, impayés : pourquoi des entreprises rentables finissent par fermer", href: "/articles/tresorerie-entreprises-rentables" },
       ]} />
     </ArticleShell>
   );
