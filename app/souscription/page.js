@@ -1,8 +1,8 @@
 import { Nav, Footer, OffersPlateau } from "../components";
 
 export const metadata = {
-  title: "Souscription — Lancez votre diagnostic | ATLAS",
-  description: "Souscrivez à l'offre ATLAS de votre choix : Hermès, Iris ou Athéna. Diagnostic stratégique complet pour TPE et PME.",
+  title: "Souscription : lancez votre diagnostic | ATLAS",
+  description: "Souscrivez &agrave; l&apos;offre ATLAS de votre choix : Herm&egrave;s, Iris ou Ath&eacute;na. Diagnostic strat&eacute;gique complet pour TPE et PME.",
 };
 
 export default function Souscription() {
