@@ -1,15 +1,16 @@
 import Link from "next/link";
-import { Nav, Footer, GoldSep, OfferPageBottom } from "../../components";
+import { Nav, Footer, GoldSep, OfferPageBottom, MarbleBand } from "../../components";
 
 export const metadata = {
-  title: "Offre Hermès — Diagnostic stratégique complet | ATLAS",
-  description: "Un diagnostic complet de votre entreprise sur 10 domaines stratégiques. Rapport détaillé de 24 à 40 pages avec recommandations priorisées et plan d'action. 199 €.",
+  title: "Offre Herm&egrave;s : diagnostic strat&eacute;gique complet | ATLAS",
+  description: "Un diagnostic complet de votre entreprise sur dix domaines strat&eacute;giques. Rapport d&eacute;taill&eacute; de 24 &agrave; 40 pages avec recommandations prioris&eacute;es et plan d&apos;action. 249 &euro;.",
 };
 
 export default function Hermes() {
   return (
     <>
       <Nav />
+      <MarbleBand offre="hermes" />
       <div className="container">
         <section className="page-header">
           <div className="section-label">Offre Herm&egrave;s</div>
@@ -35,7 +36,7 @@ export default function Hermes() {
           <h2>&Agrave; qui s&apos;adresse Herm&egrave;s</h2>
           <p>Aux dirigeants qui veulent un &eacute;tat des lieux clair, sans engagement de suivi. Vous recevez votre diagnostic, vous appliquez les recommandations &agrave; votre rythme. Vous pourrez &eacute;voluer vers Iris ou Ath&eacute;na &agrave; tout moment.</p>
           <div className="offer-cta-block">
-            <div className="offer-cta-price">199 &euro; <span>TTC</span></div>
+            <div className="offer-cta-price">249 &euro; <span>TTC</span></div>
             <Link href="/souscription#hermes" className="btn-cta">Souscrire &agrave; Herm&egrave;s &rarr;</Link>
           </div>
           <OfferPageBottom current="hermes" />
