@@ -1,8 +1,8 @@
 import { Nav, Footer, GoldSep, DiscoverRow, OffersPlateau } from "../components";
 
 export const metadata = {
-  title: "Nos offres — Diagnostic stratégique pour TPE et PME | ATLAS",
-  description: "Trois niveaux d'accompagnement adaptés à chaque entreprise : Hermès (199€), Iris (599€) et Athéna (1199€). Du diagnostic complet à l'accompagnement dans la durée.",
+  title: "Nos offres : diagnostic strat&eacute;gique pour TPE et PME | ATLAS",
+  description: "Trois niveaux d&apos;accompagnement adapt&eacute;s &agrave; chaque entreprise : Herm&egrave;s (249 &euro;), Iris (599 &euro;) et Ath&eacute;na (1 299 &euro;). Du diagnostic complet &agrave; l&apos;accompagnement dans la dur&eacute;e.",
 };
 
 export default function Offres() {
