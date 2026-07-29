@@ -22,8 +22,8 @@ export default function Article3() {
       <h2>Les solutions en ligne</h2>
       <p>Des auto-diagnostics gratuits existent. Avantage : accessibilité. Limite : sans analyse humaine, sans croisement de données, sans contexte sectoriel, les recommandations restent génériques.</p>
       <GoldSep />
-      <h2>O&ugrave; se situe ATLAS</h2>
-      <p>ATLAS occupe l'espace entre les auto-diagnostics superficiels et les missions inaccessibles. 127 questions, une recherche sectorielle actualisée, SWOT, PESTEL, Porter, les mêmes outils que les cabinets, pour une fraction du prix. Hermès à 199 €, Iris à 599 €, Athéna à 1 199 €. Le choix n'est plus entre « ne rien faire » et « dépenser 5 000 € ».</p>
+      <h2>Où se situe ATLAS</h2>
+      <p>ATLAS occupe l'espace entre les auto-diagnostics superficiels et les missions inaccessibles. 127 questions, une recherche sectorielle actualisée, SWOT, PESTEL, Porter, les mêmes outils que les cabinets, pour une fraction du prix. Hermès à 249 €, Iris à 599 €, Athéna à 1 299 €. Le choix n'est plus entre « ne rien faire » et « dépenser 5 000 € ».</p>
       <ConversionBanner
         title="Un diagnostic sérieux, sans le tarif d'un cabinet"
         text="ATLAS applique aux TPE et PME les méthodologies des grands cabinets, à un prix qui reste accessible."
