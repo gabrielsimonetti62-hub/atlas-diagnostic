@@ -1,15 +1,16 @@
 import Link from "next/link";
-import { Nav, Footer, GoldSep, OfferPageBottom } from "../../components";
+import { Nav, Footer, GoldSep, OfferPageBottom, MarbleBand } from "../../components";
 
 export const metadata = {
-  title: "Offre Iris — Diagnostic et suivi à 3 mois | ATLAS",
-  description: "Le diagnostic stratégique complet, prolongé par une orientation vers les bons experts et un suivi à 3 mois pour mesurer vos progrès. 599 €.",
+  title: "Offre Iris : diagnostic et suivi &agrave; 3 mois | ATLAS",
+  description: "Le diagnostic strat&eacute;gique complet, prolong&eacute; par une orientation vers les bons experts et un suivi &agrave; trois mois pour mesurer vos progr&egrave;s. 599 &euro;.",
 };
 
 export default function Iris() {
   return (
     <>
       <Nav />
+      <MarbleBand offre="iris" />
       <div className="container">
         <section className="page-header">
           <div className="section-label">Offre Iris</div>
@@ -17,7 +18,7 @@ export default function Iris() {
           <p className="section-intro">Le diagnostic qui laisse une trace.</p>
         </section>
         <div className="offer-figure">
-          <img src="/images/texture-violette.jpg" alt="Traîn&eacute;e de couleurs, embl&egrave;me d&apos;Iris" />
+          <img src="/images/texture-violette.jpg" alt="Tra&icirc;n&eacute;e de couleurs, embl&egrave;me d&apos;Iris" />
         </div>
         <div className="myth-block">
           <p>Dans la mythologie grecque, Iris est la messag&egrave;re des dieux et la d&eacute;esse de l&apos;arc-en-ciel. Lorsqu&apos;elle traverse le ciel afin de porter un message, elle laisse derri&egrave;re elle une tra&icirc;n&eacute;e de couleurs qui relie le ciel &agrave; la terre. Son passage ne s&apos;efface pas : il illumine et trace un chemin visible &agrave; tous.</p>
