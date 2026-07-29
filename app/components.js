@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { CookieBanner } from "./cookie-banner";
 
 export function Nav() {
   return (
@@ -13,13 +14,19 @@ export function Nav() {
             <div className="nav-drop">
               <Link href="/offres" className="nav-link">Offres</Link>
               <div className="nav-drop-menu">
-                <Link href="/offres/hermes" className="nav-drop-item">Herm&egrave;s <span>Le diagnostic complet &middot; 199 &euro;</span></Link>
-                <Link href="/offres/iris" className="nav-drop-item">Iris <span>Diagnostic + suivi 3 mois &middot; 599 &euro;</span></Link>
-                <Link href="/offres/athena" className="nav-drop-item">Ath&eacute;na <span>Accompagnement 7 mois &middot; 1 199 &euro;</span></Link>
+                <Link href="/offres/hermes" className="nav-drop-item">Herm&egrave;s <span>Le diagnostic complet &middot; 249 &euro;</span></Link>
+                <Link href="/offres/iris" className="nav-drop-item">Iris <span>Diagnostic et suivi &agrave; 3 mois &middot; 599 &euro;</span></Link>
+                <Link href="/offres/athena" className="nav-drop-item">Ath&eacute;na <span>Accompagnement 7 mois &middot; 1 299 &euro;</span></Link>
+              </div>
+            </div>
+            <div className="nav-drop">
+              <Link href="/a-propos" className="nav-link">&Agrave; propos</Link>
+              <div className="nav-drop-menu">
+                <Link href="/methode" className="nav-drop-item">Notre m&eacute;thode <span>Comment ATLAS analyse votre entreprise</span></Link>
+                <Link href="/a-propos" className="nav-drop-item">Qui sommes-nous <span>Mission, ambition et &eacute;quipe</span></Link>
               </div>
             </div>
             <Link href="/articles" className="nav-link">Articles</Link>
-            <Link href="/a-propos" className="nav-link">&Agrave; propos</Link>
             <Link href="/#offres" className="nav-cta">Diagnostiquer mon entreprise</Link>
           </div>
         </nav>
@@ -30,18 +37,39 @@ export function Nav() {
 
 export function Footer() {
   return (
-    <div className="container">
-      <footer className="footer">
-        <div className="footer-left">ATLAS &middot; Conseil en strat&eacute;gie et diagnostic d&apos;entreprise</div>
-        <div className="footer-links">
-          <Link href="/mentions-legales">Mentions l&eacute;gales</Link>
-          <Link href="/cgv">CGV</Link>
-          <Link href="/confidentialite">Confidentialit&eacute;</Link>
-          <Link href="/articles">Articles</Link>
-          <Link href="/a-propos">&Agrave; propos</Link>
-        </div>
-      </footer>
-    </div>
+    <>
+      <div className="container">
+        <footer className="footer">
+          <div className="footer-col">
+            <h4>ATLAS</h4>
+            <p className="footer-mission">ATLAS applique aux TPE et PME les m&eacute;thodologies du conseil strat&eacute;gique de haut niveau.</p>
+            <div className="footer-legal">
+              <p>Micro-entreprise, article 293 B du CGI.</p>
+              <p>SIREN : 107 508 905 &middot; APE 7022Z.</p>
+              <p>TVA non applicable, article 293 B du CGI.</p>
+            </div>
+          </div>
+          <div className="footer-col footer-links-col">
+            <h4>Navigation</h4>
+            <Link href="/offres">Nos offres</Link>
+            <Link href="/methode">Notre m&eacute;thode</Link>
+            <Link href="/a-propos">Qui sommes-nous</Link>
+            <Link href="/articles">Articles</Link>
+          </div>
+          <div className="footer-col footer-contact-col">
+            <h4>Contact et l&eacute;gal</h4>
+            <a href="mailto:contact@atlas-diagnostic.fr">contact@atlas-diagnostic.fr</a>
+            <Link href="/mentions-legales">Mentions l&eacute;gales</Link>
+            <Link href="/cgv">Conditions g&eacute;n&eacute;rales</Link>
+            <Link href="/confidentialite">Confidentialit&eacute;</Link>
+          </div>
+          <div className="footer-copy">
+            &copy; 2026 ATLAS. Tous droits r&eacute;serv&eacute;s.
+          </div>
+        </footer>
+      </div>
+      <CookieBanner />
+    </>
   );
 }
 
@@ -62,8 +90,7 @@ export function OfferCheck({ color, children }) {
   );
 }
 
-/* Boutons "Decouvrir" â hauts de cartes colores.
-   exclude: "hermes" | "iris" | "athena" pour masquer une offre. */
+/* Boutons Decouvrir : hauts de cartes. exclude masque une offre. */
 export function DiscoverRow({ exclude }) {
   return (
     <div className="discover-row">
@@ -89,14 +116,14 @@ export function DiscoverRow({ exclude }) {
   );
 }
 
-/* Carte offre complete. Le bouton "Souscrire" renvoie vers la souscription. */
+/* Carte offre. Bouton Souscrire vers la souscription. */
 export function OfferCard({ offre }) {
   if (offre === "hermes") {
     return (
       <div className="offer-card">
         <div className="offer-top offer-top-silver">
           <div className="offer-name">Herm&egrave;s</div>
-          <div className="offer-price">199 &euro; <span>TTC</span></div>
+          <div className="offer-price">249 &euro; <span>TTC</span></div>
         </div>
         <div className="offer-bottom">
           <div className="offer-desc">Un bilan complet et imm&eacute;diat de votre entreprise.</div>
@@ -138,7 +165,7 @@ export function OfferCard({ offre }) {
       <div className="offer-badge badge-premium"><span style={{ fontSize: "12px" }}>&#128081;</span> Premium</div>
       <div className="offer-top offer-top-purple">
         <div className="offer-name">Ath&eacute;na</div>
-        <div className="offer-price">1 199 &euro; <span>TTC</span></div>
+        <div className="offer-price">1 299 &euro; <span>TTC</span></div>
       </div>
       <div className="offer-bottom">
         <div className="offer-desc">L&apos;accompagnement complet sur 7 mois.</div>
@@ -148,10 +175,10 @@ export function OfferCard({ offre }) {
           <OfferCheck color="purple">Rapport d&eacute;taill&eacute;</OfferCheck>
           <OfferCheck color="purple">Recommandations prioris&eacute;es</OfferCheck>
           <OfferCheck color="purple">Orientation &eacute;cosyst&egrave;me ATLAS</OfferCheck>
-          <OfferCheck color="purple">Suivi &agrave; 1 mois + recommandations</OfferCheck>
-          <OfferCheck color="purple">Suivi &agrave; 3 mois + bilan d&apos;&eacute;volution</OfferCheck>
-          <OfferCheck color="purple">Suivi &agrave; 5 mois + recommandations</OfferCheck>
-          <OfferCheck color="purple">Suivi &agrave; 7 mois + bilan de fin de parcours</OfferCheck>
+          <OfferCheck color="purple">Suivi &agrave; 1 mois et recommandations</OfferCheck>
+          <OfferCheck color="purple">Suivi &agrave; 3 mois et bilan d&apos;&eacute;volution</OfferCheck>
+          <OfferCheck color="purple">Suivi &agrave; 5 mois et recommandations</OfferCheck>
+          <OfferCheck color="purple">Suivi &agrave; 7 mois et bilan de fin de parcours</OfferCheck>
         </ul>
         <Link href="/souscription#athena" className="offer-btn">Souscrire &agrave; Ath&eacute;na</Link>
       </div>
@@ -159,7 +186,6 @@ export function OfferCard({ offre }) {
   );
 }
 
-/* Les trois cartes sur leur plateau parchemin */
 export function OffersPlateau({ label, title }) {
   return (
     <div className="plateau">
@@ -174,7 +200,6 @@ export function OffersPlateau({ label, title }) {
   );
 }
 
-/* Bas de page offre : boutons Decouvrir des 2 autres offres + carte de l'offre courante */
 export function OfferPageBottom({ current }) {
   return (
     <div className="offer-bottom-section">
@@ -203,7 +228,24 @@ export function ConversionBanner({ title, text, stat }) {
   );
 }
 
-/* Gabarit d'article : en-tete violet centre, image, corps creme */
+/* Liens croises entre articles */
+export function ArticleRelated({ items }) {
+  return (
+    <div className="article-related">
+      <div className="article-related-label">&Agrave; lire &eacute;galement</div>
+      <div className="article-related-grid">
+        {items.map((it, i) => (
+          <Link key={i} href={it.href} className="article-related-item">
+            <div className="rel-label">{it.label}</div>
+            <div className="rel-title">{it.title}</div>
+          </Link>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+/* Gabarit article */
 export function ArticleShell({ label, title, image, imageAlt, children }) {
   return (
     <>
@@ -226,5 +268,52 @@ export function ArticleShell({ label, title, image, imageAlt, children }) {
       </div>
       <Footer />
     </>
+  );
+}
+
+/* Bande marbre pour pages offres */
+export function MarbleBand({ offre }) {
+  return <div className={`marble-band marble-band-${offre}`} aria-hidden="true"></div>;
+}
+
+/* Angle mort en cercle alterne */
+export function AngleMort({ num, image, imageAlt, title, children }) {
+  return (
+    <div className="angle-mort">
+      <div className="angle-img">
+        <img src={image} alt={imageAlt} />
+      </div>
+      <div className="angle-text">
+        <div className="angle-num">0{num}</div>
+        <h3>{title}</h3>
+        <p>{children}</p>
+      </div>
+    </div>
+  );
+}
+
+/* Trois portes d'entree */
+export function Portes() {
+  return (
+    <div className="portes">
+      <Link href="/methode" className="porte">
+        <div className="porte-num">01</div>
+        <div className="porte-title">Notre m&eacute;thode</div>
+        <div className="porte-desc">La rigueur d&apos;une analyse construite sur les m&eacute;thodologies &eacute;prouv&eacute;es des cabinets de r&eacute;f&eacute;rence.</div>
+        <span className="porte-arrow">D&eacute;couvrir &rarr;</span>
+      </Link>
+      <Link href="/offres" className="porte">
+        <div className="porte-num">02</div>
+        <div className="porte-title">Nos offres</div>
+        <div className="porte-desc">Trois niveaux d&apos;accompagnement adapt&eacute;s &agrave; chaque situation, du diagnostic au suivi &eacute;chelonn&eacute; sur sept mois.</div>
+        <span className="porte-arrow">Consulter &rarr;</span>
+      </Link>
+      <Link href="/a-propos" className="porte">
+        <div className="porte-num">03</div>
+        <div className="porte-title">Qui sommes-nous</div>
+        <div className="porte-desc">La mission, l&apos;ambition et l&apos;&eacute;quipe derri&egrave;re ATLAS.</div>
+        <span className="porte-arrow">En savoir plus &rarr;</span>
+      </Link>
+    </div>
   );
 }
