@@ -6,33 +6,36 @@ export default function Home() {
     <>
       <Nav />
 
-      {/* HERO */}
-      <div className="container">
-        <section className="hero">
-          <div className="hero-eyebrow animate-in">Diagnostic strat&eacute;gique pour TPE et PME</div>
-          <h1 className="animate-in delay-1">Le diagnostic strat&eacute;gique appliqu&eacute; &agrave; votre entreprise.</h1>
-          <p className="animate-in delay-2">ATLAS applique aux TPE et PME les m&eacute;thodologies &eacute;prouv&eacute;es par les cabinets de conseil. Un diagnostic complet sur dix domaines strat&eacute;giques, livr&eacute; &agrave; partir de 72 heures.</p>
-          <a href="#offres" className="btn-cta animate-in delay-3">Diagnostiquer mon entreprise &rarr;</a>
-          <div className="hero-sub animate-in delay-3">&Agrave; partir de 249 &euro;</div>
-          <div className="trust-bar animate-in delay-4">
-            <div className="trust-item"><div className="trust-num">127</div><div className="trust-label">questions d&apos;analyse</div></div>
-            <div className="trust-item"><div className="trust-num">10</div><div className="trust-label">domaines strat&eacute;giques</div></div>
-            <div className="trust-item"><div className="trust-num">24&ndash;40</div><div className="trust-label">pages de rapport</div></div>
-            <div className="trust-item"><div className="trust-num">72h</div><div className="trust-label">premiers r&eacute;sultats</div></div>
+      {/* HERO STICKY + BLOC QUI MONTE PAR-DESSUS (effet Deloitte) */}
+      <div className="sticky-hero-wrap">
+        <section className="hero-sticky">
+          <div className="container">
+            <div className="hero">
+              <div className="hero-eyebrow animate-in">Diagnostic strat&eacute;gique pour TPE et PME</div>
+              <h1 className="animate-in delay-1">Le diagnostic strat&eacute;gique appliqu&eacute; &agrave; votre entreprise.</h1>
+              <p className="animate-in delay-2">ATLAS applique aux TPE et PME les m&eacute;thodologies &eacute;prouv&eacute;es par les cabinets de conseil. Un diagnostic complet sur dix domaines strat&eacute;giques, livr&eacute; &agrave; partir de 72 heures.</p>
+              <a href="#offres" className="btn-cta animate-in delay-3">Diagnostiquer mon entreprise &rarr;</a>
+              <div className="hero-sub animate-in delay-3">&Agrave; partir de 249 &euro;</div>
+              <div className="trust-bar animate-in delay-4">
+                <div className="trust-item"><div className="trust-num">127</div><div className="trust-label">questions d&apos;analyse</div></div>
+                <div className="trust-item"><div className="trust-num">10</div><div className="trust-label">domaines strat&eacute;giques</div></div>
+                <div className="trust-item"><div className="trust-num">24&ndash;40</div><div className="trust-label">pages de rapport</div></div>
+                <div className="trust-item"><div className="trust-num">72h</div><div className="trust-label">premiers r&eacute;sultats</div></div>
+              </div>
+            </div>
           </div>
         </section>
-      </div>
 
-      {/* BLOC B+C QUI MONTE SUR LE HERO */}
-      <div className="deloitte-lift">
-        <div className="deloitte-inner">
-          <div className="deloitte-eyebrow">Notre positionnement</div>
-          <h2 className="deloitte-title">Le conseil r&eacute;serv&eacute; aux grands, d&eacute;sormais accessible aux TPE et PME</h2>
-          <div className="deloitte-body">
-            <p>Plus de 99 % du tissu &eacute;conomique fran&ccedil;ais est compos&eacute; de TPE et de PME. Aucune de ces entreprises ne b&eacute;n&eacute;ficie du niveau d&apos;analyse strat&eacute;gique offert aux grands groupes par les cabinets de conseil.</p>
-            <p>ATLAS a &eacute;t&eacute; con&ccedil;u &agrave; partir d&apos;un constat simple : la qualit&eacute; du diagnostic strat&eacute;gique ne devrait pas d&eacute;pendre de la taille de l&apos;entreprise qui le commande. Nos m&eacute;thodes, nos outils et notre grille d&apos;analyse sont ceux des cabinets qui accompagnent les grandes structures. Notre lecture, elle, est celle du terrain.</p>
+        <div className="deloitte-lift">
+          <div className="deloitte-inner">
+            <div className="deloitte-eyebrow">Notre positionnement</div>
+            <h2 className="deloitte-title">Le conseil r&eacute;serv&eacute; aux grands, d&eacute;sormais accessible aux TPE et PME</h2>
+            <div className="deloitte-body">
+              <p>Plus de 99 % du tissu &eacute;conomique fran&ccedil;ais est compos&eacute; de TPE et de PME. Aucune de ces entreprises ne b&eacute;n&eacute;ficie du niveau d&apos;analyse strat&eacute;gique offert aux grands groupes par les cabinets de conseil.</p>
+              <p>ATLAS a &eacute;t&eacute; con&ccedil;u &agrave; partir d&apos;un constat simple : la qualit&eacute; du diagnostic strat&eacute;gique ne devrait pas d&eacute;pendre de la taille de l&apos;entreprise qui le commande. Nos m&eacute;thodes, nos outils et notre grille d&apos;analyse sont ceux des cabinets qui accompagnent les grandes structures. Notre lecture, elle, est celle du terrain.</p>
+            </div>
+            <Portes />
           </div>
-          <Portes />
         </div>
       </div>
 
