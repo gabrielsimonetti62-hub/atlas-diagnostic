@@ -1,15 +1,16 @@
 import Link from "next/link";
-import { Nav, Footer, GoldSep, OfferPageBottom } from "../../components";
+import { Nav, Footer, GoldSep, OfferPageBottom, MarbleBand } from "../../components";
 
 export const metadata = {
-  title: "Offre Athéna — Accompagnement stratégique sur 7 mois | ATLAS",
-  description: "L'accompagnement complet : diagnostic stratégique, orientation experts et suivis réguliers à 1, 3, 5 et 7 mois avec bilans d'évolution. 1 199 €.",
+  title: "Offre Ath&eacute;na : accompagnement strat&eacute;gique sur 7 mois | ATLAS",
+  description: "L&apos;accompagnement complet : diagnostic strat&eacute;gique, orientation experts et suivis r&eacute;guliers &agrave; 1, 3, 5 et 7 mois avec bilans d&apos;&eacute;volution. 1 299 &euro;.",
 };
 
 export default function Athena() {
   return (
     <>
       <Nav />
+      <MarbleBand offre="athena" />
       <div className="container">
         <section className="page-header">
           <div className="section-label">Offre Ath&eacute;na</div>
@@ -32,9 +33,9 @@ export default function Athena() {
           <p>S&apos;y ajoutent l&apos;orientation vers l&apos;&eacute;cosyst&egrave;me ATLAS et quatre rendez-vous de suivi &eacute;chelonn&eacute;s sur sept mois : &agrave; 1 mois pour ajuster le lancement du plan d&apos;action, &agrave; 3 mois pour un bilan d&apos;&eacute;volution complet, &agrave; 5 mois pour de nouvelles recommandations, et &agrave; 7 mois pour un bilan de fin de parcours qui mesure le chemin accompli.</p>
           <p>&Agrave; chaque &eacute;tape, votre situation est r&eacute;&eacute;valu&eacute;e, vos scores actualis&eacute;s, vos priorit&eacute;s r&eacute;ordonn&eacute;es. Vous ne restez jamais seul face &agrave; votre plan d&apos;action : ATLAS avance avec vous, sur la dur&eacute;e.</p>
           <h2>&Agrave; qui s&apos;adresse Ath&eacute;na</h2>
-          <p>Aux dirigeants qui veulent transformer leur entreprise en profondeur et &ecirc;tre accompagn&eacute;s dans la dur&eacute;e. Sept mois pour structurer, corriger, progresser &mdash; et ressortir du parcours avec une entreprise plus solide et un regard plus aiguis&eacute;.</p>
+          <p>Aux dirigeants qui veulent transformer leur entreprise en profondeur et &ecirc;tre accompagn&eacute;s dans la dur&eacute;e. Sept mois pour structurer, corriger, progresser, et ressortir du parcours avec une entreprise plus solide et un regard plus aiguis&eacute;.</p>
           <div className="offer-cta-block">
-            <div className="offer-cta-price">1 199 &euro; <span>TTC</span></div>
+            <div className="offer-cta-price">1 299 &euro; <span>TTC</span></div>
             <Link href="/souscription#athena" className="btn-cta">Souscrire &agrave; Ath&eacute;na &rarr;</Link>
           </div>
           <OfferPageBottom current="athena" />
