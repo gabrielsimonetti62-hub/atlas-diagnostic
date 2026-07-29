@@ -1,4 +1,4 @@
-import { ArticleShell, ConversionBanner, GoldSep } from "../../components";
+import { ArticleShell, ConversionBanner, GoldSep, ArticleRelated } from "../../components";
 
 export const metadata = {
   title: "Diagnostic d'entreprise : combien ça coûte ? | ATLAS",
@@ -8,7 +8,7 @@ export const metadata = {
 export default function Article3() {
   return (
     <ArticleShell label="Pratique" title="Diagnostic d&apos;entreprise : combien &ccedil;a co&ucirc;te ?" image="/images/texture-doree.jpg" imageAlt="Texture dor&eacute;e et argent&eacute;e">
-      <p>La question du co&ucirc;t est souvent la premi&egrave;re &mdash; et celle qui dissuade. Les tarifs des cabinets sont rarement affich&eacute;s, et les montants peuvent &ecirc;tre dissuasifs. Voici un panorama clair.</p>
+      <p>La question du co&ucirc;t est souvent la premi&egrave;re, et celle qui dissuade. Les tarifs des cabinets sont rarement affich&eacute;s, et les montants peuvent &ecirc;tre dissuasifs. Voici un panorama clair.</p>
       <GoldSep />
       <h2>Les grands cabinets de conseil</h2>
       <p>McKinsey, BCG, Deloitte, PwC facturent entre 800 et 3 000 &euro; par jour. Une mission de diagnostic mobilise deux &agrave; quatre consultants pendant deux &agrave; six semaines. Co&ucirc;t : 30 000 &agrave; 150 000 &euro;. Justifi&eacute; pour les ETI en transformation, hors de port&eacute;e pour une TPE &agrave; 300 000 &euro; de CA.</p>
@@ -23,12 +23,16 @@ export default function Article3() {
       <p>Des auto-diagnostics gratuits existent. Avantage : accessibilit&eacute;. Limite : sans analyse humaine, sans croisement de donn&eacute;es, sans contexte sectoriel, les recommandations restent g&eacute;n&eacute;riques.</p>
       <GoldSep />
       <h2>O&ugrave; se situe ATLAS</h2>
-      <p>ATLAS occupe l&apos;espace entre les auto-diagnostics superficiels et les missions inaccessibles. 127 questions, une recherche sectorielle actualis&eacute;e, SWOT, PESTEL, Porter &mdash; les m&ecirc;mes outils que les cabinets, pour une fraction du prix. Herm&egrave;s &agrave; 199 &euro;, Iris &agrave; 599 &euro;, Ath&eacute;na &agrave; 1 199 &euro;. Le choix n&apos;est plus entre &laquo; ne rien faire &raquo; et &laquo; d&eacute;penser 5 000 &euro; &raquo;.</p>
+      <p>ATLAS occupe l&apos;espace entre les auto-diagnostics superficiels et les missions inaccessibles. 127 questions, une recherche sectorielle actualis&eacute;e, SWOT, PESTEL, Porter, les m&ecirc;mes outils que les cabinets, pour une fraction du prix. Herm&egrave;s &agrave; 199 &euro;, Iris &agrave; 599 &euro;, Ath&eacute;na &agrave; 1 199 &euro;. Le choix n&apos;est plus entre &laquo; ne rien faire &raquo; et &laquo; d&eacute;penser 5 000 &euro; &raquo;.</p>
       <ConversionBanner
-        title="Un diagnostic de cabinet, au prix d&apos;un ind&eacute;pendant"
-        text="Comparez par vous-m&ecirc;me."
-        stat="&Agrave; partir de 199 &euro; &middot; 10 domaines analys&eacute;s &middot; R&eacute;sultats d&egrave;s 72h"
+        title="Un diagnostic s&eacute;rieux, sans le tarif d&apos;un cabinet"
+        text="ATLAS applique aux TPE et PME les m&eacute;thodologies des grands cabinets, &agrave; un prix qui reste accessible."
+        stat="Herm&egrave;s 249 &euro; &middot; Iris 599 &euro; &middot; Ath&eacute;na 1 299 &euro;."
       />
+      <ArticleRelated items={[
+        { label: "Ressources", title: "Aides et accompagnement pour les TPE et PME", href: "/articles/aides-accompagnement-tpe-pme" },
+        { label: "Guide", title: "Diagnostic strat&eacute;gique d&apos;entreprise : pourquoi et comment", href: "/articles/diagnostic-strategique-pourquoi-comment" },
+      ]} />
     </ArticleShell>
   );
 }
