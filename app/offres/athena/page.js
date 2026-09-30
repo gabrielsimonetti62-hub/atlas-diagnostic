@@ -3,7 +3,7 @@ import { Nav, Footer, GoldSep, OfferPageBottom, MarbleBand } from "../../compone
 
 export const metadata = {
   title: "Offre Ath&eacute;na : accompagnement strat&eacute;gique sur 7 mois | ATLAS",
-  description: "L&apos;accompagnement complet : diagnostic strat&eacute;gique, orientation experts et suivis r&eacute;guliers &agrave; 1, 3, 5 et 7 mois avec bilans d&apos;&eacute;volution. 1 299 &euro;.",
+  description: "L&apos;accompagnement complet : diagnostic strat&eacute;gique, orientation experts et suivis r&eacute;guliers &agrave; 1, 3, 5 et 7 mois avec bilans d&apos;&eacute;volution. 1 499 &euro;.",
 };
 
 export default function Athena() {
@@ -35,7 +35,7 @@ export default function Athena() {
           <h2>&Agrave; qui s&apos;adresse Ath&eacute;na</h2>
           <p>Aux dirigeants qui veulent transformer leur entreprise en profondeur et &ecirc;tre accompagn&eacute;s dans la dur&eacute;e. Sept mois pour structurer, corriger, progresser, et ressortir du parcours avec une entreprise plus solide et un regard plus aiguis&eacute;.</p>
           <div className="offer-cta-block">
-            <div className="offer-cta-price">1 299 &euro; <span>TTC</span></div>
+            <div className="offer-cta-price">1 499 &euro; <span>TTC</span></div>
             <Link href="/souscription#athena" className="btn-cta">Souscrire &agrave; Ath&eacute;na &rarr;</Link>
           </div>
           <OfferPageBottom current="athena" />
