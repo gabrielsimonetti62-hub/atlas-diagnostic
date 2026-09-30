@@ -27,7 +27,7 @@ export default function Article3() {
       <ConversionBanner
         title="Un diagnostic sérieux, sans le tarif d'un cabinet"
         text="ATLAS applique aux TPE et PME les méthodologies des grands cabinets, à un prix qui reste accessible."
-        stat="Hermès 249 € · Iris 599 € · Athéna 1 299 €."
+        stat="Hermès 499 € · Iris 799 € · Athéna 1 499 €."
       />
       <ArticleRelated items={[
         { label: "Ressources", title: "Aides et accompagnement pour les TPE et PME", href: "/articles/aides-accompagnement-tpe-pme" },
