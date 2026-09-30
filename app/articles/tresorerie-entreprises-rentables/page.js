@@ -23,7 +23,7 @@ export default function ArticleTresorerie() {
       <ConversionBanner
         title="Voir la trésorerie avant qu'elle ne vous rattrape"
         text="Le diagnostic ATLAS mesure vos marges réelles, votre besoin en fonds de roulement et votre résilience financière."
-        stat="Diagnostic complet à partir de 249 €."
+        stat="Diagnostic complet à partir de 499 €."
       />
       <ArticleRelated items={[
         { label: "Analyse", title: "Dépendre d'un seul client : le danger silencieux qui menace les TPE et PME", href: "/articles/dependance-client-danger-silencieux" },
