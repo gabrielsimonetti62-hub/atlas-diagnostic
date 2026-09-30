@@ -27,7 +27,7 @@ export default function Article1() {
       <ConversionBanner
         title="Passer du principe à l'action"
         text="Vous savez maintenant ce qu'un diagnostic doit contenir. La prochaine étape ? Réaliser le vôtre."
-        stat="Diagnostic ATLAS : à partir de 249 €."
+        stat="Diagnostic ATLAS : à partir de 499 €."
       />
       <ArticleRelated items={[
         { label: "Analyse", title: "Les 10 signaux qui montrent que votre entreprise a besoin d'un diagnostic", href: "/articles/10-signaux-diagnostic" },
