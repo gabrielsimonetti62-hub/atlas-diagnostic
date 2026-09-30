@@ -14,9 +14,9 @@ export function Nav() {
             <div className="nav-drop">
               <Link href="/offres" className="nav-link">Offres</Link>
               <div className="nav-drop-menu">
-                <Link href="/offres/hermes" className="nav-drop-item">Herm&egrave;s <span>Le diagnostic complet &middot; 249 &euro;</span></Link>
-                <Link href="/offres/iris" className="nav-drop-item">Iris <span>Diagnostic et suivi &agrave; 3 mois &middot; 599 &euro;</span></Link>
-                <Link href="/offres/athena" className="nav-drop-item">Ath&eacute;na <span>Accompagnement 7 mois &middot; 1 299 &euro;</span></Link>
+                <Link href="/offres/hermes" className="nav-drop-item">Herm&egrave;s <span>Le diagnostic complet &middot; 499 &euro;</span></Link>
+                <Link href="/offres/iris" className="nav-drop-item">Iris <span>Diagnostic et suivi &agrave; 3 mois &middot; 799 &euro;</span></Link>
+                <Link href="/offres/athena" className="nav-drop-item">Ath&eacute;na <span>Accompagnement 7 mois &middot; 1 499 &euro;</span></Link>
               </div>
             </div>
             <div className="nav-drop">
@@ -123,7 +123,7 @@ export function OfferCard({ offre }) {
       <div className="offer-card">
         <div className="offer-top offer-top-silver">
           <div className="offer-name">Herm&egrave;s</div>
-          <div className="offer-price">249 &euro; <span>TTC</span></div>
+          <div className="offer-price">499 &euro; <span>TTC</span></div>
         </div>
         <div className="offer-bottom">
           <div className="offer-desc">Un bilan complet et imm&eacute;diat de votre entreprise.</div>
@@ -143,7 +143,7 @@ export function OfferCard({ offre }) {
         <div className="offer-badge badge-gold">Recommand&eacute;</div>
         <div className="offer-top offer-top-gold">
           <div className="offer-name">Iris</div>
-          <div className="offer-price">599 &euro; <span>TTC</span></div>
+          <div className="offer-price">799 &euro; <span>TTC</span></div>
         </div>
         <div className="offer-bottom">
           <div className="offer-desc">Le diagnostic complet avec orientation et suivi &agrave; 3 mois.</div>
@@ -165,7 +165,7 @@ export function OfferCard({ offre }) {
       <div className="offer-badge badge-premium"><span style={{ fontSize: "12px" }}>&#128081;</span> Premium</div>
       <div className="offer-top offer-top-purple">
         <div className="offer-name">Ath&eacute;na</div>
-        <div className="offer-price">1 299 &euro; <span>TTC</span></div>
+        <div className="offer-price">1 499 &euro; <span>TTC</span></div>
       </div>
       <div className="offer-bottom">
         <div className="offer-desc">L&apos;accompagnement complet sur 7 mois.</div>
