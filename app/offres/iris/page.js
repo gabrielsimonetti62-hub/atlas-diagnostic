@@ -3,7 +3,7 @@ import { Nav, Footer, GoldSep, OfferPageBottom, MarbleBand } from "../../compone
 
 export const metadata = {
   title: "Offre Iris : diagnostic et suivi &agrave; 3 mois | ATLAS",
-  description: "Le diagnostic strat&eacute;gique complet, prolong&eacute; par une orientation vers les bons experts et un suivi &agrave; trois mois pour mesurer vos progr&egrave;s. 599 &euro;.",
+  description: "Le diagnostic strat&eacute;gique complet, prolong&eacute; par une orientation vers les bons experts et un suivi &agrave; trois mois pour mesurer vos progr&egrave;s. 799 &euro;.",
 };
 
 export default function Iris() {
@@ -35,7 +35,7 @@ export default function Iris() {
           <h2>&Agrave; qui s&apos;adresse Iris</h2>
           <p>Aux dirigeants qui veulent voir clair et v&eacute;rifier, preuve &agrave; l&apos;appui, que leurs efforts produisent des r&eacute;sultats. C&apos;est la formule recommand&eacute;e par ATLAS : celle o&ugrave; le diagnostic devient un chemin.</p>
           <div className="offer-cta-block">
-            <div className="offer-cta-price">599 &euro; <span>TTC</span></div>
+            <div className="offer-cta-price">799 &euro; <span>TTC</span></div>
             <Link href="/souscription#iris" className="btn-cta">Souscrire &agrave; Iris &rarr;</Link>
           </div>
           <OfferPageBottom current="iris" />
