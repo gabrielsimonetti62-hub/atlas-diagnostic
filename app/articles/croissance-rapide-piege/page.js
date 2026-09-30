@@ -23,7 +23,7 @@ export default function ArticleCroissance() {
       <ConversionBanner
         title="Grandir sans se casser"
         text="Le diagnostic ATLAS identifie les failles structurelles avant qu'elles ne deviennent des ruptures."
-        stat="Iris (599 €) : diagnostic + suivi à 3 mois pour piloter votre croissance."
+        stat="Iris (799 €) : diagnostic + suivi à 3 mois pour piloter votre croissance."
       />
       <ArticleRelated items={[
         { label: "Analyse", title: "Charges, trésorerie, impayés : pourquoi des entreprises rentables finissent par fermer", href: "/articles/tresorerie-entreprises-rentables" },
