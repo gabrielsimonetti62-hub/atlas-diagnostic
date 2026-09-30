@@ -23,7 +23,7 @@ export default function ArticleSolitude() {
       <ConversionBanner
         title="Un regard extérieur, sans être seul"
         text="ATLAS n'est pas un cabinet distant. C'est un compagnon d'analyse, qui vous apporte le recul dont vous manquez."
-        stat="Athéna (1 299 €) : sept mois d'accompagnement structuré."
+        stat="Athéna (1 499 €) : sept mois d'accompagnement structuré."
       />
       <ArticleRelated items={[
         { label: "Analyse", title: "Artisans, commerçants, restaurateurs : le conseil stratégique n'est pas réservé aux grands groupes", href: "/articles/conseil-strategique-artisans-commercants" },
