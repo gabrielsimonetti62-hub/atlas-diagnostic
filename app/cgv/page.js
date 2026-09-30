@@ -39,7 +39,7 @@ export default function CGV() {
           <Para>&Agrave; titre accessoire, le Prestataire peut proposer des prestations de cr&eacute;ation de site internet, dont les modalit&eacute;s sont d&eacute;finies au cas par cas.</Para>
 
           <h2>Article 3 &mdash; Prix</h2>
-          <Para>Les prix des prestations sont indiqu&eacute;s en euros sur le site&nbsp;: Herm&egrave;s &agrave; 249&nbsp;&euro;, Iris &agrave; 599&nbsp;&euro; et Ath&eacute;na &agrave; 1&nbsp;299&nbsp;&euro;. Le Prestataire b&eacute;n&eacute;ficiant de la franchise en base de TVA, ces montants ne sont pas major&eacute;s de TVA&nbsp;: la mention &laquo;&nbsp;TVA non applicable, article 293 B du Code g&eacute;n&eacute;ral des imp&ocirc;ts&nbsp;&raquo; s&apos;applique. Le prix affich&eacute; correspond ainsi au montant total d&ucirc; par le Client.</Para>
+          <Para>Les prix des prestations sont indiqu&eacute;s en euros sur le site&nbsp;: Herm&egrave;s &agrave; 499&nbsp;&euro;, Iris &agrave; 799&nbsp;&euro; et Ath&eacute;na &agrave; 1&nbsp;499&nbsp;&euro;. Le Prestataire b&eacute;n&eacute;ficiant de la franchise en base de TVA, ces montants ne sont pas major&eacute;s de TVA&nbsp;: la mention &laquo;&nbsp;TVA non applicable, article 293 B du Code g&eacute;n&eacute;ral des imp&ocirc;ts&nbsp;&raquo; s&apos;applique. Le prix affich&eacute; correspond ainsi au montant total d&ucirc; par le Client.</Para>
           <Para>Le Prestataire se r&eacute;serve le droit de modifier ses prix &agrave; tout moment. Les prestations sont factur&eacute;es sur la base du tarif en vigueur au moment de la souscription.</Para>
 
           <h2>Article 4 &mdash; Souscription et paiement</h2>
