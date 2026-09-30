@@ -15,7 +15,7 @@ export default function Home() {
               <h1 className="animate-in delay-1">Le diagnostic strat&eacute;gique appliqu&eacute; &agrave; votre entreprise.</h1>
               <p className="animate-in delay-2">ATLAS applique aux TPE et PME les m&eacute;thodologies &eacute;prouv&eacute;es par les cabinets de conseil. Un diagnostic complet sur dix domaines strat&eacute;giques, livr&eacute; &agrave; partir de 72 heures.</p>
               <a href="#offres" className="btn-cta animate-in delay-3">Diagnostiquer mon entreprise &rarr;</a>
-              <div className="hero-sub animate-in delay-3">&Agrave; partir de 249 &euro;</div>
+              <div className="hero-sub animate-in delay-3">&Agrave; partir de 499 &euro;</div>
               <div className="trust-bar animate-in delay-4">
                 <div className="trust-item"><div className="trust-num">127</div><div className="trust-label">questions d&apos;analyse</div></div>
                 <div className="trust-item"><div className="trust-num">10</div><div className="trust-label">domaines strat&eacute;giques</div></div>
