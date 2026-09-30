@@ -25,7 +25,7 @@ export default function Article4() {
       <ConversionBanner
         title="Avant d'aller chercher des aides, savoir ce qui vous manque"
         text="Un diagnostic vous dit dans quel ordre traiter vos priorités, et à qui vous adresser pour chaque chantier."
-        stat="Iris (599 €) inclut l'orientation vers l'écosystème d'experts."
+        stat="Iris (799 €) inclut l'orientation vers l'écosystème d'experts."
       />
       <ArticleRelated items={[
         { label: "Pratique", title: "Diagnostic d'entreprise : combien ça coûte ?", href: "/articles/diagnostic-entreprise-combien-ca-coute" },
